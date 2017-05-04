@@ -1,74 +1,314 @@
+/*
+
+    font-family: 'Raleway', sans-serif; text
+
+    font-family: 'Philosopher', sans-serif; naglowki
+
+    font-family: 'Poppins', sans-serif; menu/logo
+
+*/
+
 body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Lato', sans-serif;
+    background-color: #fff;
 }
-/* Menu nawigacyjne START*/
-nav {
-   width: 100%;
-    height: 90px;
+/* Strona główna START */
+/* Czcionki dla menu i nagłówków */
+
+.navbar-header .navbar-brand,
+#menu-glowne .navbar-nav>li>a {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+h2 {
+font-family: 'Philosopher', sans-serif;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    color: #fff;
+    font-size: 1.7em;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Wspólne style dla buttonów*/
+
+.btn {
+    background-color: rgba(189, 148, 96, 0.95);
+    border: 1px solid rgba(189, 148, 96, 0.95);
+    color: #333333;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn:hover {
+    background-color: #7b3f00;
+    border: 1px solid #7b3f00;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Wspólne właściwości dla btn w sekcji awards, group i about */
+
+.btn-our {
+    margin-top: 2.5%;
+    margin-bottom: 30px;
+}
+/* Wspólne właściwości dla tła sekcji */
+#awards,
+#about {
+    background-color: rgba(128, 128, 128, 0.23);
+}
+
+#group,
+#project,
+#contact {
+    background-color: #f5f5dc;
+}
+
+/* Wspólne paddingi dla nagłówków */
+#project h2,
+#awards h2,
+#group h2
+#contact h2 {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+/* Style dla menu nawigacyjnego - START */
+
+.navbar {
+    background-color: rgba(189, 148, 96, 0.8);
+    border: 0;
+}
+
+.navbar-header .navbar-brand {
+    font-size: 1.6em;
+    color: #fff;
+    padding: 15px;
+    font-style: italic;
+}
+
+.navbar-header .navbar-brand:hover {
+    color: #fff;
+}
+
+#menu-glowne .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 15px;
+}
+
+#menu-glowne .navbar-nav>li>a:hover {
+    color: #7b3f00;
+}
+
+/* Nawigacja scroll - kolor menu po scrollu - START */
+
+header .scroll {
+    background-color: rgba(189, 148, 96, 0.95);
+}
+
+header .scroll ul .menu-item a {
+    color: #fff;
+    font-weight: 500;
+}
+
+header .scroll ul .menu-item a:hover {
+    color: #7b3f00;
+}
+
+header .scroll .navbar-brand {
+    color: #fff;
+}
+/* Nawigacja scroll - kolor menu po scrollu - STOP */
+/* Style dla menu nawigacyjnego - STOP */
+
+
+/* Style dla Slajdera - START */
+
+.item .carousel-caption {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 30vh;
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    color: #81785e;
-    float: right;
-    position: relative;
-    padding: 0 5px;
-    margin-right: 30px;
-    font-size: 1.2em;
-    transform: translate(0%, 100%);
+.item .carousel-caption h1 {
+    font-size: 4em;
+    color: #333333;
+    margin-bottom: 20px;
 }
 
-nav ul li a{
+/* Style dla Slajdera - STOP */
+
+
+/* Style dla section Project - START */
+
+#project .square-info h3 {
+    color: #fff;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+#project .square-info p {
+    color: #fff;
+    line-height: 2em;
+    padding: 1%;
+}
+.square-info .text-center {
+    padding: 5%;
+    margin-right: 10%;
+     margin-left: 10%;
+}
+.pictures {
+    background-position: center;
+    background-size: center;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    border: 0;    
+}
+#home {
+    background-image: linear-gradient(rgba(61, 43, 31, 0.51), rgba(61, 43, 31, 0.51)), url(../img/Project/8048424_8048349_large-home-3892711.jpg);
+}
+
+#flat {
+    background-image: linear-gradient(rgba(61, 43, 31, 0.51), rgba(61, 43, 31, 0.51)), url(../img/Project/8048351_8048328_architecture-2052236_1920.jpg);
+}
+
+#garden {
+    background-image: linear-gradient(rgba(61, 43, 31, 0.51), rgba(61, 43, 31, 0.51)), url(../img/Project/8048445_greece-905557_1920.jpg);
+}
+
+#modern {
+    background-image: linear-gradient(rgba(61, 43, 31, 0.51), rgba(61, 43, 31, 0.51)), url(../img/Project/8048353_8048327_apartment-2094666_1920.jpg);
+ }
+.project-in {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.square-info {
+    height: 50vh;
+    width: 50%;
+    background-color: rgb(61, 43, 31);
+    opacity: 0;     
+}
+#project .square,
+#project .square2 {
+   float: right;
+}
+
+#project .square1,
+#project .square3 {
+    float: left;
+
+}
+
+
+/* Style dla section Project - STOP */
+
+/* Style dla section Nagrody - START */
+
+.awards-icon-text {
+    padding: 20px;
+}
+.awards-icon-text p{
+    line-height: 2em;
+}
+.fa-trophy {
+    color: #ffd700;
+    margin-top: 2.5%;
+    padding: 0;
+}
+
+/* Style dla section Nagrody - STOP */
+
+/* Style dla section Zespół - START */
+
+.fa-users {
+    color: #391d00;
+    margin-top: 2.5%;
+    padding: 0;
+}
+
+/* Style dla section zespół - STOP */
+
+/* Style dla section about - START */
+
+.fa-home {
+    color: #391d00;
+    margin-top: 2.5%;
+    padding: 0;
+}
+
+
+/* Style dla section about - STOP */
+/* Style dla section Contact - START */
+
+#contact a {
     text-decoration: none;
 }
-
-nav ul li:hover {
-    color: #baab84;
-    
+#contact .fa {
+    padding: 10px;
+    border: 1px solid #0000ff;
+    background-color: #0000ff;
+    margin: 10px;
+    color: #fff;
 }
-/* Menu nawigacyjne STOP */
-
-/* Logo START */
-.logo-icons .fa {
-    color: #81785e;
-    margin-left: 30px;
+#contact .fa-facebook {
+    padding-right: 1.25%;
+    padding-left: 1.25%;
 }
-
-.logo-icons .fa p{
-    font-size: 0.4em;
-    display: inline-block;
-    font-family: 'Lato', sans-serif;
-    margin: 3vh;
-}
-/* Logo STOP */
-
-/* Sekcja z obrazkiem w tle START */
-.background-img {
-    background-image: url(../img/sketch-book-455698_1920.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    height: 80vh;
-            
-}
-/* Sekcja z obrazkiem w tle STOP */
-
-/* Paragraf na obrazku START */
-.background-img p{
-    font-size: 3.5em;
-    text-align: center;
-    transform: translate(0%, 350%);
+#contact .fa:hover {
+    padding: 10px;
+    border: 1px solid #0000ff;
     background-color: #fff;
-    margin: 0;
-    opacity: 0.7;
+    margin: 10px;
+    color: #0000ff;
+}
+#contact .fa-facebook:hover {
+    padding-right: 1.25%;
+    padding-left: 1.25%;
+}
+.btn-contact {
+    margin: 20px;
+}
+.contact-fa {
+ border-bottom: 1px solid #7b3f00;
+    width: 30%;
+    margin-left: 34%;
+    margin-top: 10px;
+}
+#contact h3 {
+    margin-top: 10px;
 }
 
-.background-img p span {
-    color: #645b40;
+/* Style dla section Contact - STOP */
+
+/* Style dla section Stopka - START */
+#footer {
+    background-color: #000;
 }
-/* Paragraf na obrazku STOP */
+#footer p {
+    color: #fff;
+}
+/* Style dla section Stopka - STOP */
+
+/* Strona główna STOP */
+

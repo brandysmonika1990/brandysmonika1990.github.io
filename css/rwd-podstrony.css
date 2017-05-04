@@ -1,0 +1,13 @@
+@media (max-width: 480px) {
+    #project-item {
+      height: 50vh;
+    }
+    .our-project {
+        height: 20vh;
+        top: 25%;
+    }
+    .our-project h1 {
+     font-size: 3em;
+        margin-top: 3%;
+    }
+}

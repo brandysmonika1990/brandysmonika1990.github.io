@@ -1,41 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <!-- Link z głównymi stylami CSS -->
+    <title>Design</title>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Philosopher|Poppins|Raleway" rel="stylesheet"> 
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Główne style -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Link z czcionką ROBOTO -->
-   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">  
-   <!-- FontAwesome -->
-   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>Strona Demo</title>
+    <!-- Rensposywne Style -->
+    <link rel="stylesheet" href="css/rensposive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
- 
-   <!-- Menu nawigacyjne -->   
-     <nav>
-      <ul>
-          <a href="#"><li class="list-item">Projekty</li></a>
-          <a href="#"><li class="list-item">Nagrody</li></a>
-          <a href="#"><li class="list-item">Zespół</li></a>
-          <a href="#"><li class="list-item">O nas</li></a>
-          <a href="#"><li class="list-item">Kontakt</li></a>
-      </ul>
-  </nav>
-   
-   <!-- Przykładowe logo -->
-<div class="logo-icons">
-    <i class="fa fa-home fa-5x"><p>Firma XYZ</p></i>
+
+<!-- Menu nawigacyjne START -->
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Marka i przełączniki zostały pogrupowane w celu lepszego wyświetlania na urządzeniach mobilnych -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-glowne" aria-expanded="false">
+                    <!-- Data target łaczy się z nizej podanym id, jezeli podamy dwie rozne nazwy rwd menu nie bedzie działac-->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><div class="navbar-brand">Design</div></a>
+            </div>
+
+            <!-- Zbiera linki nawigacyjne, formularze i inne treści do przełączania -->
+            <div class="collapse navbar-collapse" id="menu-glowne">
+                <ul class="nav navbar-nav navbar-right text-right">
+                    <li class="menu-item"><a href="../Strona/projekty.html">Projekty</a>
+                    </li>
+                    <li class="menu-item"><a href="nagrody.html">Nagrody</a></li>
+                    <li class="menu-item"><a href="zespol.html">Zespół</a></li>
+                    <li class="menu-item"><a href="onas.html">O nas</a></li>
+                    <li class="menu-item"><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+<!-- Menu nawigacyjne KONIEC -->
+    
+<!-- Slajder START -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="img/Slajder/8045947_architect-1839657_1920.jpg" class="img-responsive" alt="Responsive image">
+            <div class="carousel-caption">
+                <h1>Nowoczesne mieszkanie</h1>
+                <a href="projekty.html" class="btn btn-default btn-lg btn-carousel">Zobacz więcej</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/Slajder/8046256_simpolo-2032188_1920.jpg" class="img-responsive" alt="Responsive image">
+            <div class="carousel-caption">
+                <h1>Ekskluzywny butique</h1>
+                <a href="projekty.html" class="btn btn-default btn-lg btn-carousel">Zobacz więcej</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/Slajder/8046142_villa-2165428_1920.jpg" class="img-responsive" alt="Responsive image">
+            <div class="carousel-caption">
+                <h1>Przestronny taras</h1>
+                <a href="projekty.html" class="btn btn-default btn-lg btn-carousel">Zobacz więcej</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/Slajder/8046144_simpolo-2032193_1920.jpg" class="img-responsive" alt="Responsive image">
+            <div class="carousel-caption">
+                <h1>Stylowy salon</h1>
+                <a href="projekty.html" class="btn btn-default btn-lg btn-carousel">Zobacz więcej</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
- 
-   <!-- Sekcja z obrazkiem w tle -->
-    <section>
-      <div class="background-img">
-       <p>Firma <span>XYZ</span></p>
-        </div>        
-    </section>
+<!-- Slajder STOP -->
 
     
+<!-- Section Project START -->
+<section id="project" class="text-center">
+    <div class="container">
+        <div class="row col-sm-12 text-center">
+            <h2>Ostatnie projekty</h2>
+        </div>
+        <div class="row col-sm-12 text-center">
+            <h3>Domy jednorodzinne</h3>
+        </div>
+        <div class="row col-sm-12 pictures" id="home">
+            <div class="row col-sm-12 project-in">
+                <div class="square square-info">
+                    <h4 class="text-center">Domy</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam pariatur, numquam, cum, eaque quaerat est tenetur deserunt odio repudiandae cumque, rem corporis labore.</p>
+                    <a href="projekty.html"><button type="button" class="btn btn-primary btn-project">Więcej</button></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="row col-sm-12 text-center">
+            <h3>Osiedla</h3>
+        </div>
+        <div class="row col-sm-12 pictures" id="flat">
+            <div class="row col-sm-12 project-in">
+                <div class="square1 square-info">
+                    <h4 class="text-center">Osiedla</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam pariatur, numquam, cum, eaque quaerat est tenetur deserunt odio repudiandae cumque, rem corporis labore.</p>
+                    <a href="projekty.html"><button type="button" class="btn btn-primary btn-project">Więcej</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 text-center">
+            <h3>Tarasy</h3>
+        </div>
+        <div class="row col-sm-12 pictures" id="garden">
+            <div class="row col-sm-12 project-in">
+                <div class="square2 square-info">
+                    <h4 class="text-center">Tarasy</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam pariatur, numquam, cum, eaque quaerat est tenetur deserunt odio repudiandae cumque, rem corporis labore. </p>
+                    <a href="projekty.html"><button type="button" class="btn btn-primary btn-project">Więcej</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 text-center">
+            <h3>Wnętrza</h3>
+        </div>
+        <div class="row col-sm-12 pictures" id="modern">
+            <div class="row col-sm-12 project-in">
+                <div class="square3 square-info">
+                    <h4 class="text-center">Wnętrza</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam pariatur, numquam, cum, eaque quaerat est tenetur deserunt odio repudiandae cumque, rem corporis labore.</p>
+                    <a href="projekty.html"><button type="button" class="btn btn-primary btn-project">Więcej</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section Project STOP -->
+
+<!-- Section Nagrody START -->
+<section id="awards" class="container col-sm-12">
+    <div class="row col-sm-12 text-center">
+        <h2>Nagrody</h2>
+        <div class="awards-icon-text">
+            <i class="fa fa-trophy fa-5x col-sm-6"></i>
+            <p class="row col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus, nobis eaque minima quidem recusandae assumenda eligendi! Veniam blanditiis ea sapiente, modi, nobis libero dolorem reprehenderit, impedit qui pariatur doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus, nobis eaque minima quidem recusandae assumenda eligendi! Veniam blanditiis ea sapiente, modi, nobis libero dolorem reprehenderit, impedit qui pariatur doloremque! </br>
+                <a href="nagrody.html"><button type="button" class="btn btn-primary btn-our">Więcej</button></a>
+            </p>
+
+        </div>
+    </div>
+
+</section>
+<!-- Section Nagrody STOP -->
+
+<!-- Section Zespół START -->
+<section id="group" class="container col-sm-12">
+    <div class="row col-sm-12 text-center">
+        <h2>Zespół</h2>
+        <div class="awards-icon-text">
+            <p class="row col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus, nobis eaque minima quidem recusandae assumenda eligendi! Veniam blanditiis ea sapiente, modi, nobis libero dolorem reprehenderit, impedit qui pariatur doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus, nobis eaque minima quidem recusandae assumenda eligendi! Veniam blanditiis ea sapiente, modi, nobis libero dolorem reprehenderit, impedit qui pariatur doloremque! </br>
+                <a href="zespol.html"><button type="button" class="btn btn-primary btn-our">Więcej</button></a>
+            </p>
+            <i class="fa fa-users fa-5x col-sm-6"></i>
+        </div>
+    </div>
+</section>
+<!-- Section Zespół STOP -->
+
+<!-- Section About START -->
+<section id="about" class="container col-sm-12">
+    <div class="row col-sm-12 text-center">
+        <h2>O nas</h2>
+        <div class="awards-icon-text">
+            <i class="fa fa-home fa-5x col-sm-6"></i>
+            <p class="row col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus, nobis eaque minima quidem recusandae assumenda eligendi! Veniam blanditiis ea sapiente, modi, nobis libero dolorem reprehenderit, impedit qui pariatur doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus, nobis eaque minima quidem recusandae assumenda eligendi! Veniam blanditiis ea sapiente, modi, nobis libero dolorem reprehenderit, impedit qui pariatur doloremque! </br>
+                <a href="onas.html"><button type="button" class="btn btn-primary btn-our">Więcej</button></a>
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Section About STOP -->
+
+<!-- Section Contact START -->
+<section id="contact" class="container col-sm-12">
+    <div class="row col-sm-12 text-center">
+        <h2>Kontakt</h2>
+    </div>
+    <div class="row col-sm-12 text-center">
+        <h3>Znajdz nas w mediach społecznościowych</h3>
+        <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+        <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+    </div>
+    <div class="row col-sm-12 contact-fa"></div>
+    <div class="row col-sm-12 text-center" id="form">
+        <h3>Wyślij zapytanie</h3>
+        <button type="button" class="btn btn-primary btn-contact ">Formularz</button>
+    </div>
+</section>
+<!-- Section Contact STOP -->
+
+<!-- Section Stopka START -->
+<footer id="footer" class="container col-sm-12">
+    <div class="row col-sm-12 text-center">
+        <p>Brandys-Kosińska Monika Copyright 2017</p>
+    </div>
+</footer>
+<!-- Section Stopka STOP -->
+
+
+    <!--Skrypty JS-->
+    <!-- jQuery plugins -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Głowny JS -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

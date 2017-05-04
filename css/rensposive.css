@@ -1,0 +1,141 @@
+@media (max-width: 768px) {
+    /* Sekcja dla nawigacji START */
+    header {
+        background-color: #fff;
+    }
+    header ul .menu-item a {
+        color: rgb(189, 148, 96);
+        text-transform: capitalize;
+        font-size: 1.2em;
+        padding: 0;
+        margin-top: 0;
+        padding: 10px 20px;
+    }
+    header ul li:not(:last-child) {
+        border-bottom: 1.3px dashed #7b3f00;
+    }
+    header ul li:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    header ul li:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    header ul .menu-item a:hover {
+        color: #7b3f00;
+    }
+    .navbar-header .navbar-brand {
+        color: #fff;
+    }
+    #menu-glowne,
+    .navbar-header {
+        background-color: rgb(189, 148, 96);
+    }
+    .item .carousel-caption h1 {
+        font-size: 3em;
+        margin-bottom: 5px;
+    }
+    .item .carousel-caption {
+        transform: translateY(-40%);
+    }
+    .carousel-indicators {
+        opacity: 0;
+    }
+    .square-info .text-center {
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+    #contact .fa-facebook {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+        margin: 0;
+    }
+    #menu-glowne,
+    .navbar-header {
+        background-color: rgb(189, 148, 96);
+    }
+    .navbar-header .navbar-brand {
+        color: #fff;
+    }
+    .navbar-brand::after {
+        color: red;
+    }
+    #carousel-example-generic {
+        margin-top: 10%;
+    }
+    .carousel-indicators,
+    .carousel-control {
+        opacity: 0;
+    }
+    .btn-carousel {
+        height: 30px;
+        font-size: 10px;
+    }
+    #project .square-info h3 {
+        font-size: 1em;
+        margin-top: 10%;
+        margin-bottom: 0;
+    }
+    #project .square-info p {
+        font-size: 0.7em;
+        padding: 10%;
+    }
+    .square-info .text-center {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .btn-project {
+        height: 30px;
+        font-size: 10px;
+    }
+    .fa-trophy {
+        margin-top: 0;
+    }
+    #awards p,
+    #group p {
+        padding: 5px;
+    }
+    #awards h2,
+    #group h2,
+    #about h2,
+    #contact h2 {
+        padding-top: 20px;
+        margin-bottom: 0;
+        font-size: 1.7em;
+    }
+    .btn-our {
+        margin-bottom: 5px;
+    }
+    #contact h2 {
+        margin-bottom: 10px;
+    }
+    #contact h2,
+    #contact h3 {
+        margin-top: 20px;
+    }
+    #contact .fa {
+        padding: 10px;
+        border: 1px solid #0000ff;
+        background-color: #0000ff;
+        margin: 5px;
+        color: #fff;
+        font-size: 20px;
+    }
+    #contact .fa-facebook {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+    .btn-contact {
+        margin-top: 5px;
+    }
+    #footer p {
+        margin: 0 auto;
+    }  
+}
