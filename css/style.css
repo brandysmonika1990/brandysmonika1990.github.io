@@ -1,101 +1,96 @@
-/*
-
-    font-family: 'Raleway', sans-serif; text
-
-    font-family: 'Philosopher', sans-serif; naglowki
-
-    font-family: 'Poppins', sans-serif; menu/logo
-
-*/
-
 body {
     background-color: #fff;
 }
-/* Strona główna START */
-/* Czcionki dla menu i nagłówków */
 
-.navbar-header .navbar-brand,
-#menu-glowne .navbar-nav>li>a {
-    font-family: 'Poppins', sans-serif;
+
+/* Wspólny padding dla każdego ID dokumentu */
+
+#services .container .row,
+#portfolio .container .row,
+#about .container .row,
+#contact .container .row,
+#footer .container .row {
+    padding: 30px;
 }
 
-h1 {
-    font-family: 'Philosopher', sans-serif;
+
+/* Wspólna wielkosć czcionek dla h3*/
+
+#services h4,
+#about h4,
+#portfolio h4 {
+    font-size: 1.3em;
 }
 
-h2 {
-font-family: 'Philosopher', sans-serif;
-    font-size: 2.5em;
-}
 
-h3 {
-    font-family: 'Raleway', sans-serif;
-}
-
-h4 {
-    color: #fff;
-    font-size: 1.7em;
-}
+/* Fonty dla wszystkich nagłówków h1 */
 
 p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
-/* Wspólne style dla buttonów*/
-
-.btn {
-    background-color: rgba(189, 148, 96, 0.95);
-    border: 1px solid rgba(189, 148, 96, 0.95);
-    color: #333333;
-    font-family: 'Raleway', sans-serif;
+h3,
+.navbar-brand {
+    font-family: 'Droid Serif', serif;
+    font-weight: 300;
+    font-size: 1.3em;
 }
 
-.btn:hover {
-    background-color: #7b3f00;
-    border: 1px solid #7b3f00;
+
+/* Fonty dla wszystkich nagłówków h2, menu nawigacyjnego */
+h1,
+h2,
+h4,
+#menu-glowne .navbar-nav>li>a,
+.btn,
+.place-input,
+.input-textarea {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+/* Wspólne style dla font awesome */
+
+#about .container .row .icon-awe,
+#footer .container .row .icon-awe {
+    border-radius: 50%;
+    background-color: #000;
+    padding: 10px;
     color: #fff;
-    font-family: 'Raleway', sans-serif;
 }
 
-/* Wspólne właściwości dla btn w sekcji awards, group i about */
-
-.btn-our {
-    margin-top: 2.5%;
-    margin-bottom: 30px;
-}
-/* Wspólne właściwości dla tła sekcji */
-#awards,
-#about {
-    background-color: rgba(128, 128, 128, 0.23);
+#about .container .row .icon-awe:hover,
+#footer .container .row .icon-awe:hover {
+    background-color: #0ed8d6;
+    color: #fff;
 }
 
-#group,
-#project,
-#contact {
-    background-color: #f5f5dc;
+#about .container .row .fa-facebook,
+#footer .container .row .fa-facebook {
+    padding: 10px 15px;
 }
 
-/* Wspólne paddingi dla nagłówków */
-#project h2,
-#awards h2,
-#group h2
-#contact h2 {
-    padding: 20px;
-    padding-bottom: 0px;
+#about .container .row .fa-linkedin,
+#footer .container .row .fa-linkedin {
+    padding-left: 12px;
+    padding-right: 12px;
 }
+
 
 /* Style dla menu nawigacyjnego - START */
 
 .navbar {
-    background-color: rgba(189, 148, 96, 0.8);
+    background-color: transparent;
     border: 0;
 }
 
 .navbar-header .navbar-brand {
     font-size: 1.6em;
     color: #fff;
-    padding: 15px;
-    font-style: italic;
+    padding: 15px 30px;
 }
 
 .navbar-header .navbar-brand:hover {
@@ -104,211 +99,272 @@ p {
 
 #menu-glowne .navbar-nav>li>a {
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 500;
-    padding: 15px;
 }
 
 #menu-glowne .navbar-nav>li>a:hover {
-    color: #7b3f00;
+    color: #0ed8d6;
 }
+
+
+/* Style dla menu nawigacyjnego - STOP */
+
 
 /* Nawigacja scroll - kolor menu po scrollu - START */
 
-header .scroll {
-    background-color: rgba(189, 148, 96, 0.95);
+#main-nav.scroll {
+    background-color: #0ed8d6;
 }
 
-header .scroll ul .menu-item a {
+#main-nav.scroll ul .menu-item a {
     color: #fff;
     font-weight: 500;
 }
 
-header .scroll ul .menu-item a:hover {
-    color: #7b3f00;
+#main-nav.scroll ul .menu-item a:hover {
+    color: #777777;
 }
 
-header .scroll .navbar-brand {
+#main-nav.scroll .navbar-brand {
     color: #fff;
 }
+
+
 /* Nawigacja scroll - kolor menu po scrollu - STOP */
-/* Style dla menu nawigacyjnego - STOP */
 
 
-/* Style dla Slajdera - START */
+/* Style dla Header z Obrazkiem - START */
 
-.item .carousel-caption {
+header {
+    background-image: linear-gradient(rgba(82, 82, 122, 0.5), rgba(82, 82, 122, 0.5)), url(../img/header/pictures_on_the_wall.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: center;
+    position: relative;
+}
+
+header .header-caption {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    height: 30vh;
-}
-
-.item .carousel-caption h1 {
-    font-size: 4em;
-    color: #333333;
-    margin-bottom: 20px;
-}
-
-/* Style dla Slajdera - STOP */
-
-
-/* Style dla section Project - START */
-
-#project .square-info h3 {
     color: #fff;
-    margin-bottom: 0;
+}
+
+header .header-caption h2 {
+    font-size: 2em;
+}
+
+header .header-caption h1 {
+    font-size: 4em;
+}
+
+
+/* Style dla przycisku button na obrazku - START */
+
+span[title~="viev"] {
+    font-size: 20px;
+}
+
+.btn-blue {
+    background-color: #0ed8d6;
+}
+
+
+/* Style dla Header z Obrazkiem - STOP */
+
+
+/* Style dla section Servies - START */
+
+#services p {
+    line-height: 1.6em;
+}
+
+
+/* Kolor ikon + animacja START */
+
+#services .container .row .icon-awe {
+    transition: 1s all;
+    border: 1px solid #0ed8d6;
+    border-radius: 50%;
+    background-color: #0ed8d6;
+    padding: 20px;
+    color: #fff;
+}
+
+#services .container .row .icon-awe:hover {
+    transform: rotate(360deg);
+    background-color: #fff;
+    color: #0ed8d6;
+}
+
+#services .container .row .fa-stack-2x {
+    color: #0ed8d6;
+}
+
+
+/* Kolor ikon + animacja STOP */
+
+
+/* Style dla section Servies - STOP */
+
+
+/* Style dla sekcji Portfolio - START */
+
+#portfolio {
+    height: 170vh;
+    background-color: #f7f7f7;
+}
+
+.inner {
+    height: 300px;
+    overflow: hidden;
+}
+
+#portfolio .container .row .picture {
+    background-size: cover;
+    transition: all 1s;
+}
+
+#portfolio-item-1 {
+    background-image: url(..//img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio-item-2 {
+    background-image: url(..//img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio-item-3 {
+    background-image: url(..//img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio-item-4 {
+    background-image: url(..//img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio-item-5 {
+    background-image: url(..//img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio-item-6 {
+    background-image: url(..//img/portfolio/typing_on_laptop.jpg);
+}
+
+.img-container .hov:hover {
+    transform: scale(1.2);
+}
+
+.img-container {
+    height: 100%;
+}
+
+.img-container div {
+    height: 100%;
+}
+
+.portfolio-mask {
+    transition: all 1s;
+    background-color: rgba(14, 216, 214, 0.85);
+    opacity: 0;
+}
+
+.portfolio-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .fa {
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    transform: translateY(100%);
+    line-height: 100px;
+    font-size: 4em;
+}
+
+.text-nag {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 5%;
     padding: 10px;
 }
 
-#project .square-info p {
+
+/* Style dla sekcji Portfolio - STOP */
+
+
+/* Style dla sekcji o NAS - START */
+
+.face {
+    padding: 10px;
+}
+
+.face img {
+    max-height: 230px;
+}
+
+
+/* Style dla sekcji o NAS - STOP */
+
+
+/* Style dla sekcji Kontakt - START */
+
+#contact {
+    background-color: #213b50;
     color: #fff;
-    line-height: 2em;
-    padding: 1%;
-}
-.square-info .text-center {
-    padding: 5%;
-    margin-right: 10%;
-     margin-left: 10%;
-}
-.pictures {
-    background-position: center;
-    background-size: center;
-    height: 50vh;
-    padding: 0;
-    margin: 0;
-    border: 0;    
-}
-#home {
-    background-image: linear-gradient(rgba(61, 43, 31, 0.51), rgba(61, 43, 31, 0.51)), url(../img/Project/8048424_8048349_large-home-3892711.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer/world-map.jpg);
 }
 
-#flat {
-    background-image: linear-gradient(rgba(61, 43, 31, 0.51), rgba(61, 43, 31, 0.51)), url(../img/Project/8048351_8048328_architecture-2052236_1920.jpg);
-}
-
-#garden {
-    background-image: linear-gradient(rgba(61, 43, 31, 0.51), rgba(61, 43, 31, 0.51)), url(../img/Project/8048445_greece-905557_1920.jpg);
-}
-
-#modern {
-    background-image: linear-gradient(rgba(61, 43, 31, 0.51), rgba(61, 43, 31, 0.51)), url(../img/Project/8048353_8048327_apartment-2094666_1920.jpg);
- }
-.project-in {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-.square-info {
-    height: 50vh;
-    width: 50%;
-    background-color: rgb(61, 43, 31);
-    opacity: 0;     
-}
-#project .square,
-#project .square2 {
-   float: right;
-}
-
-#project .square1,
-#project .square3 {
-    float: left;
-
-}
-
-
-/* Style dla section Project - STOP */
-
-/* Style dla section Nagrody - START */
-
-.awards-icon-text {
+#contact .container .row .place-input {
+    height: 50px;
+    font-size: 1.2em;
     padding: 20px;
 }
-.awards-icon-text p{
-    line-height: 2em;
-}
-.fa-trophy {
-    color: #ffd700;
-    margin-top: 2.5%;
-    padding: 0;
+
+#contact .container .row .input-textarea {
+    font-size: 1.2em;
+    padding: 15px;
 }
 
-/* Style dla section Nagrody - STOP */
-
-/* Style dla section Zespół - START */
-
-.fa-users {
-    color: #391d00;
-    margin-top: 2.5%;
-    padding: 0;
+#contact .container .row textarea {
+    height: 220px;
 }
 
-/* Style dla section zespół - STOP */
-
-/* Style dla section about - START */
-
-.fa-home {
-    color: #391d00;
-    margin-top: 2.5%;
-    padding: 0;
-}
-
-
-/* Style dla section about - STOP */
-/* Style dla section Contact - START */
-
-#contact a {
-    text-decoration: none;
-}
-#contact .fa {
-    padding: 10px;
-    border: 1px solid #0000ff;
-    background-color: #0000ff;
-    margin: 10px;
-    color: #fff;
-}
-#contact .fa-facebook {
-    padding-right: 1.25%;
-    padding-left: 1.25%;
-}
-#contact .fa:hover {
-    padding: 10px;
-    border: 1px solid #0000ff;
+#contact form input:not([type='submit']),
+#contact form textarea {
+    width: 100%;
     background-color: #fff;
-    margin: 10px;
-    color: #0000ff;
-}
-#contact .fa-facebook:hover {
-    padding-right: 1.25%;
-    padding-left: 1.25%;
-}
-.btn-contact {
-    margin: 20px;
-}
-.contact-fa {
- border-bottom: 1px solid #7b3f00;
-    width: 30%;
-    margin-left: 34%;
-    margin-top: 10px;
-}
-#contact h3 {
-    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    color: #333333;
 }
 
-/* Style dla section Contact - STOP */
-
-/* Style dla section Stopka - START */
-#footer {
-    background-color: #000;
+#contact input[type='submit'] {
+    background-color: #0ed8d6;
 }
-#footer p {
-    color: #fff;
+
+#contact input[value="Send message"] {
+    font-size: 15px;
+    padding: 20px;
 }
-/* Style dla section Stopka - STOP */
 
-/* Strona główna STOP */
 
+/* Sekcja Kontakt - STOP */
+
+
+/* Sekcja Stopka - START */
+
+#footer h2 {
+    font-size: 1em;
+    text-transform: none;
+}
+
+#footer .container .row span {
+    margin-left: 5%;
+}
+
+
+/* Sekcja Stopka - STOP */
